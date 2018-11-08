@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:600|Gentium+Book+Basic|Work+Sans:300,400,500");
-body:after, footer:after, .roadmap-container:after, .position-button a:after, .position-button a:visited:after, .press-button a:after, .press-button a:visited:after, .intro:after, .grgtoken-slides .single-grgtoken-slide:after, .project-slides .single-project-slide:after, .wrapper.press ul:after, .wrapper.press ul li:after, .wrapper.press ul li .press-wrapper:after, .wrapper.positions ul:after, .wrapper.positions ul li:after, .wrapper.positions ul li .position-wrapper:after {
+body:after, footer:after, .roadmap-container:after, .position-button a:after,
+.position-button a:visited:after,
+.press-button a:after,
+.press-button a:visited:after, .intro:after, .grgtoken-slides .single-grgtoken-slide:after, .project-slides .single-project-slide:after, .wrapper.press ul:after, .wrapper.press ul li:after, .wrapper.press ul li .press-wrapper:after, .wrapper.positions ul:after, .wrapper.positions ul li:after, .wrapper.positions ul li .position-wrapper:after {
   content: "";
   display: table;
   clear: both; }
@@ -1115,7 +1118,8 @@ header.site-header .languages {
 
 #whitelist-button {
   top: 120px;
-  position: relative; }
+  position: relative;
+  z-index: 999; }
 
 .whitelist {
   font-weight: 700; }
@@ -1208,17 +1212,21 @@ header.site-header .languages {
 @media all and (min-width: 960px) and (max-width: 1023px) {
   #whitelist-button {
     top: 120px;
-    position: relative; } }
+    position: relative;
+    z-index: 999; } }
 @media all and (min-width: 801px) and (max-width: 959px) {
   #whitelist-button {
     top: 120px;
-    position: relative; } }
+    position: relative;
+    z-index: 999; } }
 @media all and (min-width: 769px) and (max-width: 800px) {
   .icon-ico-sale {
+    z-index: 999;
     margin-right: auto;
     margin-left: auto; }
 
   .ico-button-container {
+    z-index: 999;
     display: inline-block; }
 
   .shake {
@@ -1234,10 +1242,12 @@ header.site-header .languages {
             animation-duration: 1.5s; } }
 @media all and (min-width: 569px) and (max-width: 768px) {
   .icon-ico-sale {
+    z-index: 999;
     margin-right: auto;
     margin-left: auto; }
 
   .ico-button-container {
+    z-index: 999;
     display: inline-block; }
 
   .shake {
@@ -1254,7 +1264,8 @@ header.site-header .languages {
 @media all and (min-width: 481px) and (max-width: 568px) {
   #whitelist-button {
     top: 5px;
-    position: relative; }
+    position: relative;
+    z-index: 999; }
 
   .shake {
     -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
@@ -1270,10 +1281,12 @@ header.site-header .languages {
     text-align: center; }
 
   .icon-ico-sale {
+    z-index: 999;
     margin-right: auto;
     margin-left: auto; }
 
   .ico-button-container {
+    z-index: 999;
     display: inline-block; }
 
   @-webkit-keyframes fadeInOpacity {
@@ -1294,7 +1307,8 @@ header.site-header .languages {
 @media all and (min-width: 321px) and (max-width: 480px) {
   #whitelist-button {
     top: 5px;
-    position: relative; }
+    position: relative;
+    z-index: 999; }
 
   .shake {
     -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
@@ -1310,10 +1324,12 @@ header.site-header .languages {
     text-align: center; }
 
   .icon-ico-sale {
+    z-index: 999;
     margin-right: auto;
     margin-left: auto; }
 
   .ico-button-container {
+    z-index: 999;
     display: inline-block; }
 
   @-webkit-keyframes fadeInOpacity {
@@ -1334,7 +1350,8 @@ header.site-header .languages {
 @media all and (min-width: 0px) and (max-width: 320px) {
   #whitelist-button {
     top: 5px;
-    position: relative; }
+    position: relative;
+    z-index: 999; }
 
   .shake {
     -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
@@ -1350,10 +1367,12 @@ header.site-header .languages {
     text-align: center; }
 
   .icon-ico-sale {
+    z-index: 999;
     margin-right: auto;
     margin-left: auto; }
 
   .ico-button-container {
+    z-index: 999;
     display: inline-block; }
 
   @-webkit-keyframes fadeInOpacity {
@@ -1382,6 +1401,8 @@ header.site-header .languages {
   float: left;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
+  .button.bottom-menu-button {
+    background-color: #ffffff; }
   .button.nav {
     width: 100%; }
     .button.nav .icon-wrapper {
@@ -1466,7 +1487,8 @@ header.site-header .languages {
   .button .icon-newsletter {
     width: 35px; }
 
-.position-button, .press-button {
+.position-button,
+.press-button {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1478,7 +1500,10 @@ header.site-header .languages {
   background: transparent;
   -webkit-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out; }
-  .position-button a, .position-button a:visited, .press-button a, .press-button a:visited {
+  .position-button a,
+  .position-button a:visited,
+  .press-button a,
+  .press-button a:visited {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1487,7 +1512,8 @@ header.site-header .languages {
     width: 100%;
     padding-left: 0;
     padding-right: 0; }
-  .position-button .icon, .press-button .icon {
+  .position-button .icon,
+  .press-button .icon {
     width: 17%;
     border-right: 1px solid #054186;
     -webkit-align-self: center;
@@ -1504,23 +1530,28 @@ header.site-header .languages {
             justify-content: center;
     -webkit-transition: border 0.3s ease-in-out;
     transition: border 0.3s ease-in-out; }
-    .position-button .icon svg, .press-button .icon svg {
+    .position-button .icon svg,
+    .press-button .icon svg {
       -webkit-align-self: center;
           -ms-flex-item-align: center;
               align-self: center;
       width: 70%; }
-    .position-button .icon path, .press-button .icon path {
+    .position-button .icon path,
+    .press-button .icon path {
       -webkit-transition: stroke 0.3s ease-in-out;
       transition: stroke 0.3s ease-in-out; }
     @media (max-width: 1024px) and (min-width: 767px) {
-      .position-button .icon, .press-button .icon {
+      .position-button .icon,
+      .press-button .icon {
         width: 50px;
         height: 50px; } }
     @media (max-width: 766px) {
-      .position-button .icon, .press-button .icon {
+      .position-button .icon,
+      .press-button .icon {
         width: 50px;
         height: 40px; } }
-  .position-button .label, .press-button .label {
+  .position-button .label,
+  .press-button .label {
     width: 83%;
     font-size: 0.9722222222vw;
     font-weight: 300;
@@ -1531,32 +1562,40 @@ header.site-header .languages {
             align-self: center;
     padding: 0 10px; }
     @media (max-width: 1024px) and (min-width: 767px) {
-      .position-button .label, .press-button .label {
+      .position-button .label,
+      .press-button .label {
         font-size: 14px;
         font-size: 1.4rem;
         line-height: 20.3px; } }
     @media (max-width: 766px) {
-      .position-button .label, .press-button .label {
+      .position-button .label,
+      .press-button .label {
         font-size: 12px;
         font-size: 1.2rem;
         line-height: 17.4px; } }
-  .position-button.press-button .icon-video, .press-button.press-button .icon-video {
+  .position-button.press-button .icon-video,
+  .press-button.press-button .icon-video {
     padding: 3% 2.3%; }
     @media (max-width: 766px) {
-      .position-button.press-button .icon-video, .press-button.press-button .icon-video {
+      .position-button.press-button .icon-video,
+      .press-button.press-button .icon-video {
         padding: 1%; } }
-  .position-button.position-button .icon, .press-button.position-button .icon {
+  .position-button.position-button .icon,
+  .press-button.position-button .icon {
     width: 12%; }
     @media (max-width: 1024px) and (min-width: 767px) {
-      .position-button.position-button .icon, .press-button.position-button .icon {
+      .position-button.position-button .icon,
+      .press-button.position-button .icon {
         width: 50px;
         height: 50px; } }
-  .position-button.position-button .label, .press-button.position-button .label {
+  .position-button.position-button .label,
+  .press-button.position-button .label {
     width: 88%; }
 
 body.IE .button .icon-wrapper {
   z-index: 0; }
-body.IE .position-button .icon, body.IE .press-button .icon {
+body.IE .position-button .icon,
+body.IE .press-button .icon {
   height: 52px; }
 
 .intro {
@@ -1615,7 +1654,7 @@ body.IE .position-button .icon, body.IE .press-button .icon {
   @media (max-width: 1024px) and (min-width: 767px) {
     .intro .intro-content-wrapper {
       position: absolute;
-      top: 45%;
+      top: 450px;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
