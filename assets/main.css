@@ -2087,7 +2087,6 @@ body.IE .press-button .icon {
             width: 40px;
             height: 40px; }
           .intro .buttons .button .label {
-            background: #FFC957;
             width: -webkit-calc(100% - 40px);
             width: calc(100% - 40px);
             padding: 0 5px; } }
